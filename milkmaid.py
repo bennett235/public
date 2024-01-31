@@ -15,7 +15,7 @@ from timeit import default_timer
 """
 Milkmaid Problem:
     
-A milkmaid needs to travel from city A to city B, bringing a pail of water on
+A milkmaid needs to travel from city B to city A, bringing a pail of water on
 the way. If the river is defined on an x,y plane by the function f(x)=10/(1+x),
 find the shortest path between A and B that touches the river
 
@@ -101,7 +101,7 @@ def plotwalk(A,B,sol):
     plt.plot([A[0],sol[0],B[0]],[A[1],sol[1],B[1]],ls=":",color="red") 
     plt.annotate("A",(A[0]+.2,A[1])) 
     plt.annotate("B",(B[0]+.2,B[1])) 
-    plt.annotate("Priver\ny.10/(1+x)",(xvals[40],riverp[40]+.5)) 
+    plt.annotate("River\ny.10/(1+x)",(xvals[40],riverp[40]+.5)) 
     plt.title("Milkmaid Problem") 
     plt.xlabel("x") 
     plt.ylabel("y") 
